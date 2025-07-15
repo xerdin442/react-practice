@@ -97,7 +97,6 @@ const App = () => {
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
 
-        // Trending movies
         {trendingMovies.length > 0 && (
           <section className="trending">
             <h2 className="text-4xl md:text-5xl md:mb-8 mb-10">Trending</h2>
@@ -113,7 +112,6 @@ const App = () => {
           </section>
         )}
 
-        // Popular movies
         {isLoading ? (
           <Spinner />
         ) : errorMessage ? (
